@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = c.sharp
-build_property.ProjectDir = c:\Users\Admin\Documents\GitHub\c.sharp\
+build_property.RootNamespace = ConsoleApp1
+build_property.ProjectDir = c:\Users\Admin\Documents\GitHub\c.sharp\ConsoleApp1\ConsoleApp1\
