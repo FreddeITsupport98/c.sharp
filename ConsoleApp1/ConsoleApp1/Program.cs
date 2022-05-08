@@ -10,6 +10,7 @@ namespace test
         static void Main(string[] args)
         {
             Console.WriteLine("Hello world");
+            Console.WriteLine("hejda");
             Console.ReadLine();
         }
     }
