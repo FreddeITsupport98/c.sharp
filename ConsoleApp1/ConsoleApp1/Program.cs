@@ -10,7 +10,12 @@ namespace test
         static void Main(string[] args)
         {
             Console.WriteLine("Hello world");
-            Console.WriteLine("hejda");
+            Console.WriteLine("hejdå");
+           
+            Console.WriteLine("|__/");
+            Console.WriteLine("|_/");
+            Console.WriteLine("|/");
+            
             Console.ReadLine();
         }
     }
