@@ -24,11 +24,21 @@ namespace test
             Console.WriteLine("he was " + age + " years old");
             Console.WriteLine("he really liked name " + name);
             Console.WriteLine("But didnt like being " + age);
+
+            string text = "giraff";
+            char grade = 'A'; // Endast en karaktär ryms 
+            int age2 = 30;
+            double poäng = 3.5;
+            bool IsMale = true; //ENDAST TRUE OR FALSE STATment
+            Console.WriteLine(text); 
+
+
             Console.ReadLine();
+
+
         }
     }
-}  
-
+}
 
         
           
