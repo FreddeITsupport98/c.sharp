@@ -40,6 +40,17 @@ namespace test
             Console.WriteLine(text.IndexOf("det är cool")); // same but other position of index
             Console.WriteLine(text.Substring(2,4)); // lägger till substring som tar texten delvist som statartar fiörsta sen sista 
 
+            Console.WriteLine( (4 + 2) * 2 + 8 ); // whole number calculated here
+            Console.WriteLine( 8.2 + 7.5 ); // decimal point calculated here
+            Console.WriteLine(5.0 / 2.0);
+            int siffra = 6;
+            Console.WriteLine(siffra + siffra);
+            Console.WriteLine(Math.Abs(10 + 50) + " Math.Abs"); //absulute math call return value of x - x or x + x = x
+            Console.WriteLine(Math.Pow(3, 2) + " Math.Pow");
+            Console.WriteLine(Math.Sqrt(100) + " Math.Sqrt"); // squere root 
+            Console.WriteLine(Math.Max(10, 90) +" Max");
+            Console.WriteLine(Math.Min(10, 90) + " Min");
+            
             Console.ReadLine();
 
 
