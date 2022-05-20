@@ -50,7 +50,29 @@ namespace test
             Console.WriteLine(Math.Sqrt(100) + " Math.Sqrt"); // squere root 
             Console.WriteLine(Math.Max(10, 90) +" Max");
             Console.WriteLine(Math.Min(10, 90) + " Min");
+            // user input
             
+             Console.Write("Enter your name: ");
+             string namn = Console.ReadLine(); // Console.ReadLine pause so user may enter the name
+             Console.Write("Enter age: ");
+             string age3 = Console.ReadLine();
+             Console.WriteLine(" Hello " + namn + " your age is  " + age3);
+            
+            // BUILDING CALCULATOR
+
+            int siffra2 = Convert.ToInt32("100");
+            Console.WriteLine((siffra2 + siffra2) + " convert strings into int ");
+            
+            Console.Write("Enter number 1; ");
+            int number1 = Convert.ToInt32((Console.ReadLine()));
+            Console.Write(" enter sekund number :");
+            int number2 = Convert.ToInt32((Console.ReadLine()));
+            int number3 = number1 + number2;
+            Console.WriteLine(" your number is " + number3);
+            Console.WriteLine(number1 + number2 + "Variant 2 "); // varaint of adition
+
+          
+
             Console.ReadLine();
 
 
