@@ -71,7 +71,20 @@ namespace test
             Console.WriteLine(" your number is " + number3);
             Console.WriteLine(number1 + number2 + "Variant 2 "); // varaint of adition
 
-          
+            // mad libs game
+
+            String color, plrualNoun, Celebrity;
+
+            Console.Write("enter a color :");
+                color = Console.ReadLine();
+            Console.Write("enter a plrualNoun :");
+                plrualNoun = Console.ReadLine();
+            Console.Write("enter a Celebrity :");
+                Celebrity = Console.ReadLine();
+
+            Console.WriteLine("Monster i do " + color);
+            Console.WriteLine(" They try to kill " + plrualNoun + " my liver ");
+            Console.WriteLine("But i survive this " + Celebrity);
 
             Console.ReadLine();
 
