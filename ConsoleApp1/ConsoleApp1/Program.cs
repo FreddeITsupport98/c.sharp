@@ -86,9 +86,34 @@ namespace test
             Console.WriteLine(" They try to kill " + plrualNoun + " my liver ");
             Console.WriteLine("But i survive this " + Celebrity);
 
+            //arrays
+
+            int[] luckyNumber = { 4, 8, 12, 16, 20 }; // elements in array
+            //                    0, 1, 2,  3,  4, Index number          
+            //      luckyNumber[1] = 100
+            //      Output: 100
+            string[] friends = new string[3];
+            friends[0] = "jim";
+            friends[1] = "robert";
+            friends[2] = "fredrik";
+
+            Console.WriteLine( luckyNumber[0] + " Array number index " ); //specify elements as index 0 of array
+            
+            foreach (string i in friends)
+                Console.WriteLine( i );
+
+            //method
+
+            SayHi("ferdrik is bra"); //call method with int and string
+
             Console.ReadLine();
 
 
+        }
+        static void SayHi(string name) // static, void clears and parameter means code passes information to caller
+        {
+            Console.WriteLine("Hello" + name);
+            
         }
     }
 }
