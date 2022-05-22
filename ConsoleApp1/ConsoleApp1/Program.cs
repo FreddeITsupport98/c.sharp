@@ -102,17 +102,66 @@ namespace test
             foreach (string i in friends)
                 Console.WriteLine( i );
 
-            //method
+         //method
 
-            SayHi("ferdrik is bra"); //call method with int and string
+            SayHi("ferdrik is bra", 50); //call method with int and string
+
+            //return statement vaulue
+
+            Console.WriteLine(cube(10) + " return value ");
+
+
+            // if statements
+
+            bool ärMan = true;
+            bool isTall = false;
+
+            if (ärMan || isTall) // && is and operator id must be true and || is or operator means  either bpoth has not need to be truth
+            {
+                Console.WriteLine("your are tall male");
+            } 
+            else if (ärMan && !isTall) // ! this is negete operator makes it false
+            {
+                Console.WriteLine("your are short male");
+            } 
+            else if (!ärMan && isTall)
+            {
+                Console.WriteLine("your are not male but tall");
+            }
+            else 
+            {
+                Console.WriteLine("You are not tall or male!");
+            }
+
+            // more if statments
+
 
             Console.ReadLine();
-
+        
 
         }
-        static void SayHi(string name) // static, void clears and parameter means code passes information to caller
+
+        static int GetMax(int yum1, int yum2)
         {
-            Console.WriteLine("Hello" + name);
+            int resultat;
+            if (yum1 > yum2 ) {
+                resultat = yum1;
+            } else
+            {
+                resultat = yum2;
+            }
+
+            return resultat;
+        }
+
+        static int cube(int nummer) //setts name for method
+        {
+            int resultat = nummer * nummer * nummer; // use integer as defined number
+            return resultat; // return value set to resultat
+        }
+        static void SayHi(string name, int age4) // static, void clears and parameter means code passes information to caller
+        {
+            Console.WriteLine("Hello" + name + age4);
             
         }
     }
