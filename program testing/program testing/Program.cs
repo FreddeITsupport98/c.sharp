@@ -9,13 +9,13 @@ namespace test
     {
         static void Main(string[] args)
         {
-
-            bool male = true;
-            bool male2 = false
-            bool.Parse(male);
-            Console.WriteLine(male);
-
-            Console.ReadLine();
+            string userInput;
+            Console.WriteLine("Are you a male?: ");
+            userInput= Console.ReadLine();
+            bool userInputBoolean = Convert.ToBoolean(userInput);
+            Console.WriteLine(" Your answr " + userInputBoolean);
+            bool isValid = true;
+            bool isInvalid = false;
         }
     }
 }
