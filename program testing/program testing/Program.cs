@@ -19,7 +19,9 @@ namespace test
 
            int health = 100;
            int damage = 10;
-
+           int monster = 100;
+           int a = health - damage;
+           int b = monster - damage;
            Console.WriteLine("Are you ready to defeat monster?");
            Console.Write("Yes or No : ");
            string answerone = Console.ReadLine();
@@ -32,12 +34,15 @@ namespace test
                 string answertwo = Console.ReadLine();
                     if (answertwo == "yes")
                 {
-                    Console.WriteLine(health - damage);
-                    Console.WriteLine("You took som damge" + health);
+                    Console.WriteLine(b);
+                    Console.WriteLine(" monster took some damge " + b);
+
+
                 } 
                 else if (answertwo == "no")
                 {
-
+                    Console.WriteLine(a);
+                    Console.WriteLine(" You took some damge " + a);
                 }
             }
             else if (answerone == "no")

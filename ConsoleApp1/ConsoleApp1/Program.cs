@@ -135,9 +135,91 @@ namespace test
 
             // more if statments
 
+            // building better calculator
 
-            Console.ReadLine();
+            Console.WriteLine("Enter a number: ");
+            double siffraett = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a operator (+ - / *) : ");
+            string op = Console.ReadLine();
+            Console.WriteLine("Enter second number: ");
+            double siffraetvå = Convert.ToDouble(Console.ReadLine());
+            
+            if (op == "+")
+            {
+                Console.WriteLine ("Din tal: " + (siffraett + siffraetvå));
+            } else if (op == "-")
+            {
+                Console.WriteLine("Din tal: " + ( siffraett - siffraetvå ));
+            } else if (op == "*")
+            {
+                Console.WriteLine("Din tal: " + ( siffraett * siffraetvå ));    
+            } else if (op == "/")
+            {
+                Console.WriteLine("Din tal: " + ( siffraett / siffraetvå));
+            } else
+            {
+                Console.WriteLine("enter a operator");
+            }
+
+            // switch statment
+
+            Console.WriteLine(GetDay(5));
+
+
+            // whiloe loops
+
+            int index = 1;
+
+            while (index <= 5) // loop kan också vara oändligt om programen ser ingen false värde.
+            {
+               Console.WriteLine(index);
+                index++; // increament loop till it stops at 5
+            }
+
+
+            // building guessing game
+           Console.ReadLine();
         
+                
+                
+        }
+
+        static string GetDay(int dayNum)
+        {
+
+     
+
+            string dayName;
+
+            switch(dayNum)
+            {
+                case 0:
+                    dayName = "måndag";
+                    break;
+                case 1:
+                    dayName = "tisdag";
+                    break;
+                case 2:
+                    dayName = "onsdag";
+                    break;
+                case 3:
+                    dayName = "torsdag";
+                    break;
+                case 4:
+                    dayName = "fredag";
+                    break;
+                case 5:
+                    dayName = "lördag";
+                    break;
+                case 6:
+                    dayName = "söndag";
+                    break;
+                default:
+                    dayName = "inte giltig nummer";
+                    break;
+            }
+
+            return dayName;
 
         }
 
