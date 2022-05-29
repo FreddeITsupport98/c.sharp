@@ -178,6 +178,39 @@ namespace test
 
 
             // building guessing game
+
+            string secretWord = "Mamma";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOffGuesses = false;
+
+            while (guess != secretWord && !outOffGuesses)
+            {   
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("keeop guessing: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                } 
+                else 
+                {
+                    outOffGuesses |= true;
+                }
+               
+            }
+            
+            if (outOffGuesses)
+            {
+                Console.Write("You lose");
+            }
+            else
+            {
+                Console.Write("You win!");
+            }
+
+            
+
            Console.ReadLine();
         
                 
