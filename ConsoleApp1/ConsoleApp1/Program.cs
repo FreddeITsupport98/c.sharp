@@ -179,7 +179,7 @@ namespace test
 
             // building guessing game
 
-            string secretWord = "Mamma";
+            string secretWord = "mamma";
             string guess = "";
             int guessCount = 0;
             int guessLimit = 3;
