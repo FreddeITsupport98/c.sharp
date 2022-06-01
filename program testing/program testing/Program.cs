@@ -35,7 +35,7 @@ namespace test
                 {
                     Console.Write(" Want to use potion? Yes nor no ");
                     string choice3 = Console.ReadLine();    
-                    if (choice3 == "yes" && potion > 0 && health > 3) 
+                    if (choice3 == "yes" && potion > 0 && health < 3) 
                     {
                         Console.WriteLine(" potion used");
                         health++;
