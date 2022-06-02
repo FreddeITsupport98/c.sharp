@@ -189,7 +189,7 @@ namespace test
             {   
                 if (guessCount < guessLimit)
                 {
-                    Console.Write("keeop guessing: ");
+                    Console.Write("keep guessing: ");
                     guess = Console.ReadLine();
                     guessCount++;
                 } 
@@ -209,14 +209,55 @@ namespace test
                 Console.Write("You win!");
             }
 
+            // for loops
+
+            int[] arrayNumbers = { 1, 2, 4, 8, 16, 32};
+
+            for(int i = 0; i < arrayNumbers.Length; i++)
+            {
+                Console.WriteLine(arrayNumbers[i]);
+            }
+
+            // Building an Exponent Method
+
+            Console.WriteLine(getPow(3, 5)); // pass number from getPow variable
+
             
 
-           Console.ReadLine();
+            // 2d arrays
+
+            int[,] numberGrid = {
+                { 1, 2 },
+                { 5, 6 },
+                { 3, 9 }
+            };
+
+            Console.WriteLine(numberGrid[0, 0]); // array repsents number 0 column of index number 0
+
+
+            // comments
+
+            // Exception Handling
+
+            Console.ReadLine();
         
                 
                 
         }
 
+        static int getPow( int baseNum, int PowNum)
+        {
+
+            int resultat2 = 1;
+
+            for (int i = 0; i < PowNum; i++)
+            {
+                resultat2 = resultat2 * baseNum;
+            }
+
+            return resultat2;
+            
+        }
         static string GetDay(int dayNum)
         {
 
