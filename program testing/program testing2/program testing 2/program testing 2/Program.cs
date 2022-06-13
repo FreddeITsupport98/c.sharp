@@ -11,17 +11,19 @@ namespace program_testing2
         {
 
 
-            string[] cars = {"","","",""};
+            string[] cars = new string[10];
 
             
-            cars.Append(cars[0] = "1");
-            cars.Append(cars[1] = "2");
-            cars.Append(cars[2] = "3");
-            cars.Append(cars[3] = "3");
+            cars[1 + 2] = "A" + "A";
+            cars[2 + 3] = "B";
+            cars[3 + 4] = "C";
+
            
-            foreach (string car in cars) {
-                Console.WriteLine(car);
-            }
+            cars.Append(cars[1 + 2] = "volvo");
+            cars.Append(cars[1] = "volvo");
+            Console.WriteLine(cars[1 + 2]);
+            Console.WriteLine(cars[2 + 3]);
+            Console.WriteLine(cars[3 + 4]);
 
 
 

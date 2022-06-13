@@ -75,7 +75,7 @@ print(friends[0:2])
 
 lucky_Number = [1, 2, 4, 8, 16, 32, 64, 128]
 friends_Second = ["Jesper", "Simon", "kasper", "karen", "fredrik", "karin"]
-#friends_Second.extend(lucky_Number) # ökar lista med annan lista
+#friends_Second.extend(lucky_Number) # Adds list
 #friends_Second.append("Creed") #bifogar lista
 #friends_Second.insert(0, "Kelly") #begin insert index starting number
 #friends_Second.remove("kasper")
@@ -84,5 +84,28 @@ friends_Second = ["Jesper", "Simon", "kasper", "karen", "fredrik", "karin"]
 #friends_Second.reverse() reversing list
 # friends2 = friends_Second.copy copying list with same value as friends_second
 print(friends_Second)
+# switch statment
+
+def switch ():
+
+    x = 0
+x = int(input("Your choice: "))
+def first ():
+    print("First assetment")
+def second():
+    print("Second assetment")
+def third(): 
+    print("Third assetment")
+def defualt():
+    print("none of asstments works")
+
+dict = {
+   1 : first,
+   2 : second,
+   3 : third
+}
+dict.get(x,defualt) ()
+switch()
+
 
 # Tuples
